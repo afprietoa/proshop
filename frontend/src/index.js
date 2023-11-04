@@ -15,6 +15,11 @@ import reportWebVitals from './reportWebVitals';
 import Home from './pages/Home';
 import Detail from './pages/Detail';
 import Cart from './pages/Cart';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Shipping from "./pages/Shipping";
+import PrivateRoute from './components/PrivateRoute';
+import Payment from './pages/Payment';
 import {Provider} from 'react-redux';
 import store from './store';
 
@@ -24,6 +29,13 @@ const router = createBrowserRouter(
       <Route index={true} path='/' element={<Home />}/>
       <Route path='/product/:id' element={<Detail />}/>
       <Route path='/cart' element={<Cart />}/>
+      <Route path='/login' element={<Login />}/>
+      <Route path='/register' element={<Register />}/>
+
+      <Route path='' element={<PrivateRoute />}>
+        <Route path='/shipping' element={<Shipping />}/>
+        <Route path='/payment' element={<Payment />}/>
+      </Route>
     </Route>
   )
 );

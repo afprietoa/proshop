@@ -23,14 +23,12 @@
   },
   "homepage": "https://github.com/afprietoa/proshop#readme",
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.7",
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "cookie-parser": "^1.4.6",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^7.4.5",
-    "react-redux": "^8.1.3"
+    "mongoose": "^7.4.5"
   },
   "devDependencies": {
     "concurrently": "^8.2.0",
